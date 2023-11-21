@@ -1,11 +1,13 @@
-import { useState } from 'react'
-import { ResetStyles } from './styled/base/Reset'
+import LanguageMenu from './components/LanguageMenu'
 
-function App() {
-  const [count, setCount] = useState(0)
+import './styled/base/Reset.css'
+import './styled/base/Base.css'
+
+const App = () => {
 
   return (
-    <div className={ResetStyles}>
+    <div>
+      <LanguageMenu />
     </div>
   )
 }
