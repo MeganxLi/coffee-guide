@@ -1,0 +1,21 @@
+{
+  "Ingredients": {
+    "espresso": "เอสเปรสโซ",
+    "milk": "นม",
+    "chocolate": "ช็อคโกแลต",
+    "milkFoam": "โฟมนม",
+    "milkSperm": "สเปิร์มนม",
+    "water": "น้ำ",
+    "syrup": "ไซรัป",
+    "butter": "เนย"
+  },
+  "Cooffee": {
+    "Espresso": "เอสเพรสโซ",
+    "Americano": "อเมริกาโน",
+    "FlatWhit": "แฟลตไวท์",
+    "Latte": "ลาเต้",
+    "Cappuccino": "คาปูชิโน",
+    "Breve": "เบรเว่",
+    "Mocha": "โมก้า"
+  }
+}

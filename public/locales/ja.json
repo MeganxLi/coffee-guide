@@ -1,0 +1,21 @@
+{
+  "Ingredients": {
+    "espresso": "エスプレッソ",
+    "milk": "ミルク",
+    "chocolate": "チョコレート",
+    "milkFoam": "ミルクフォーム",
+    "milkSperm": "ミルクスパム",
+    "water": "水",
+    "syrup": "シロップ",
+    "butter": "バター"
+  },
+  "Cooffee": {
+    "Espresso": "エスプレッソ",
+    "Americano": "アメリカーノ",
+    "FlatWhit": "フラットホワイト",
+    "Latte": "ラテ",
+    "Cappuccino": "カプチーノ",
+    "Breve": "ブレヴェ",
+    "Mocha": "モカ"
+  }
+}

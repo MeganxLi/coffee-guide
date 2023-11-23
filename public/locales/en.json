@@ -1,0 +1,21 @@
+{
+  "Ingredients": {
+    "espresso": "Espresso",
+    "milk": "Milk",
+    "chocolate": "Chocolate",
+    "milkFoam": "Milk Foam",
+    "milkSperm": "Milk Sperm",
+    "water": "Water",
+    "syrup": "Syrup",
+    "butter": "Butter"
+  },
+  "Cooffee": {
+    "Espresso": "Espresso",
+    "Americano": "Americano",
+    "FlatWhit": "Flat whit",
+    "Latte": "Latte",
+    "Cappuccino": "Cappuccino",
+    "Breve": "Breve",
+    "Mocha": "Mocha"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Ingredients": {
+    "espresso": "濃縮咖啡",
+    "milk": "牛奶",
+    "chocolate": "巧克力",
+    "milkFoam": "奶泡",
+    "milkSperm": "奶精",
+    "water": "水",
+    "syrup": "糖漿",
+    "butter": "奶油"
+  },
+  "Cooffee": {
+    "Espresso": "濃縮咖啡",
+    "Americano": "美式咖啡",
+    "FlatWhit": "白咖啡",
+    "Latte": "拿鐵",
+    "Cappuccino": "卡布奇諾",
+    "Breve": "布里維",
+    "Mocha": "摩卡"
+  }
+}
