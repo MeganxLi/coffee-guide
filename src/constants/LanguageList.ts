@@ -1,10 +1,12 @@
+import { LanguageIosEnum } from "./EnumType"
+
 const LanguageList: LanguageListType[] = [
-  { ios: "en", name: "English" },
-  { ios: "zh", name: "中文" },
-  { ios: "ja", name: "日本語" },
-  { ios: "ko", name: "한국어" },
-  { ios: "ms", name: "Bahasa Malaysia" },
-  { ios: "th", name: "ภาษาไทย" },
+  { ios: LanguageIosEnum.EN, name: "English" },
+  { ios: LanguageIosEnum.ZH, name: "中文" },
+  { ios: LanguageIosEnum.JA, name: "日本語" },
+  { ios: LanguageIosEnum.KO, name: "한국어" },
+  { ios: LanguageIosEnum.MS, name: "Bahasa Malaysia" },
+  { ios: LanguageIosEnum.TH, name: "ภาษาไทย" },
 ]
 
 export default LanguageList
