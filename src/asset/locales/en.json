@@ -6,14 +6,24 @@
     "milkFoam": "Milk Foam",
     "milkSperm": "Milk Sperm",
     "water": "Water",
-    "syrup": "Syrup",
+    "syrup": "Caramel Syrup",
+    "brownSugar": "Brown Sugar",
+    "vanillaSyrup": "Vanilla Syrup",
+    "hazelnutSyrup": "Hazelnut Syrup",
+    "almondSyrup": "Almond Syrup",
     "butter": "Butter"
   },
-  "Cooffee": {
+  "Coffee": {
     "Espresso": "Espresso",
     "Americano": "Americano",
-    "FlatWhit": "Flat whit",
+    "FlatWhit": "Flat White",
     "Latte": "Latte",
+    "BrownSugarLatte": "Brown Sugar Latte",
+    "CaramelLatte": "Caramel Latte",
+    "VanillaLatte": "Vanilla Latte",
+    "HazelnutLatte": "Hazelnut Latte",
+    "DoubleLatte": "Double Latte",
+    "AlmondLatte": "Almond Latte",
     "Cappuccino": "Cappuccino",
     "Breve": "Breve",
     "Mocha": "Mocha"

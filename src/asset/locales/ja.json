@@ -6,14 +6,24 @@
     "milkFoam": "ミルクフォーム",
     "milkSperm": "ミルクスパム",
     "water": "水",
-    "syrup": "シロップ",
+    "syrup": "キャラメルシロップ",
+    "brownSugar": "黒糖",
+    "vanillaSyrup": "バニラシロップ",
+    "hazelnutSyrup": "ヘーゼルナッツシロップ",
+    "almondSyrup": "アーモンドシロップ",
     "butter": "バター"
   },
-  "Cooffee": {
+  "Coffee": {
     "Espresso": "エスプレッソ",
     "Americano": "アメリカーノ",
     "FlatWhit": "フラットホワイト",
     "Latte": "ラテ",
+    "BrownSugarLatte": "黒糖ラテ",
+    "CaramelLatte": "キャラメルラテ",
+    "VanillaLatte": "バニララテ",
+    "HazelnutLatte": "ヘーゼルナッツラテ",
+    "DoubleLatte": "ダブルラテ",
+    "AlmondLatte": "アーモンドラテ",
     "Cappuccino": "カプチーノ",
     "Breve": "ブレヴェ",
     "Mocha": "モカ"
