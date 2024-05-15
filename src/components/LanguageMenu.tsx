@@ -3,7 +3,7 @@ import { useRef, useState } from 'react'
 import * as Icon from 'react-feather'
 
 import LanguageList from '../constants/LanguageList'
-import { LanguageNavBlack } from '../styled/components/LanguageMenu'
+import { LanguageMenuBlock, LanguageNavBlock } from '../styled/components/LanguageMenu'
 
 interface Props {
   language: string,
@@ -11,17 +11,17 @@ interface Props {
 }
 
 const LanguageMenu = ({ language, onChange }: Props) => {
-  const dropdownRef = useRef(null)
+  const dropdownRef = useRef<HTMLDivElement>(null)
   const [isActive, setIsActive] = useState(false)
   const onClick = () => setIsActive(!isActive)
 
   return (
-    <div>
+    <LanguageMenuBlock>
       <button onClick={onClick} type="button">
         <Icon.Globe />
       </button>
 
-      <LanguageNavBlack ref={dropdownRef} show={isActive}>
+      <LanguageNavBlock ref={dropdownRef} show={isActive}>
         <ul>
           {LanguageList.map((item: LanguageListType) => (
             <li
@@ -35,8 +35,8 @@ const LanguageMenu = ({ language, onChange }: Props) => {
             </li>
           ))}
         </ul>
-      </LanguageNavBlack>
-    </div>
+      </LanguageNavBlock>
+    </LanguageMenuBlock>
   )
 }
 
