@@ -1,0 +1,3 @@
+type LanguageNavType = {
+  show: boolean
+}
