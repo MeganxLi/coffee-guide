@@ -1,30 +1,43 @@
 import { styled } from '@linaria/react'
 
+import Colors from '../utils/color'
+
 export const LanguageButton = styled.button`
+  color: ${Colors.Primary[900]};
+  display: flex;
 `
 
 export const LanguageMenuBlock = styled.div`
-
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
-export const LanguageNavBlock = styled.nav<LanguageNavType>`
+export const LanguageNavBlock = styled.nav`
   display: block;
   position: absolute;
-  opacity: ${({ show }) => (show ? 0 : 1)};
   width: 200px;
-  top: 1rem;
-  right: 1rem;
+  top: 2rem;
+  right: 0rem;
   transform: 0.5s;
-  background-color: #fff;
-  border-radius: 0.5rem;
   cursor: pointer; 
+  display: none;
+  padding-top: 1rem;
+  border: 1px solid #f3f3f4;
+  border-radius: 16px;
 
+  ${LanguageMenuBlock}:hover & {
+    display: block;
+  }
+ 
   li{
     text-decoration: none;
     color: #333333;
     padding: 15px 20px;
     display: block;
     text-align: left;
+    background-color: #fff;
 
     &:hover{
       background-color: pink;
