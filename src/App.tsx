@@ -9,6 +9,11 @@ import { CoffeeList, CoffeeListTitle } from './constants/CoffeeList'
 import LanguageIosEnum from './constants/EnumType'
 import i18n from './i18n'
 import {
+  CoffeeCapFillingStyle,
+  CoffeeCapLidCoverStyle,
+  CoffeeCapLidMiddleStyle,
+  CoffeeCapLidStrawStyle,
+  CoffeeCapStyle,
   InnerContentStyle,
   InnerStyle, LogoStyle, MenuListStyle, MenuStyle, MenuTextStyle, MenuTitleStyle, WrapperStyle,
 } from './styled/page'
@@ -30,7 +35,12 @@ const App = () => {
       </WrapperStyle>
       <InnerContentStyle>
         <InnerStyle>
-          <img src="https://img.freepik.com/free-vector/coffee-cup-tan-colour_78370-3051.jpg?size=338&ext=jpg&ga=GA1.1.44546679.1715817600&semt=sph" alt="coffee img" />
+          <CoffeeCapStyle>
+            <CoffeeCapLidStrawStyle />
+            <CoffeeCapLidCoverStyle />
+            <CoffeeCapLidMiddleStyle />
+            <CoffeeCapFillingStyle />
+          </CoffeeCapStyle>
           <MenuStyle>
             <h4>Menu</h4>
             <MenuListStyle>
