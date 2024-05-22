@@ -59,3 +59,48 @@ export const MenuTitleStyle = styled.p`
 export const MenuTextStyle = styled.p`
   line-height: 1.8rem;
 `
+
+export const CoffeeCapStyle = styled.div`
+  /* position: absolute; */
+`
+
+export const CoffeeCapBorder = styled.div`
+  border-bottom: 2px solid ${Colors.Black.transparency};
+`
+
+export const CoffeeCapLidStrawStyle = styled(CoffeeCapBorder)`
+  position: relative;
+  background-color: ${Colors.White[500]};
+  width: 60px;
+  height: 14px;
+  margin-left: 15px;
+  border-radius: 100px 25px 0 0;
+`
+export const CoffeeCapLidCoverStyle = styled(CoffeeCapBorder)`
+  position: relative;
+  background-color: ${Colors.White[500]};
+  width: 200px;
+  height: 20px;
+  border-radius: 5px 5px 0 0;
+`
+export const CoffeeCapLidMiddleStyle = styled.div`
+  background-color: ${Colors.White[500]};
+  position: relative;
+  z-index: 25;
+  width: 250px;
+  margin-left: -25px;
+  height: 35px;
+  border-radius: 10px 10px 5px 5px;
+  clip-path: polygon(3% 0%, 97% 0%, 100% 100%, 0% 100%);
+`
+export const CoffeeCapFillingStyle = styled.div`
+  position: relative;
+  z-index: -23;
+  background-color: ${Colors.White[700]};
+  border-top: 4px solid ${Colors.Black.transparency};
+  width: 230px;
+  height: 280px;
+  margin-top: -1px;
+  margin-left: -15px;
+  clip-path: polygon(0 0%, 100% 0, 88% 100%, 14% 100%);
+`
