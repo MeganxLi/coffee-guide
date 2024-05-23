@@ -15,14 +15,23 @@ import {
   CoffeeCapLidStrawStyle,
   CoffeeCapStyle,
   InnerContentStyle,
-  InnerStyle, LogoStyle, MenuListStyle, MenuStyle, MenuTextStyle, MenuTitleStyle, WrapperStyle,
+  InnerStyle,
+  LogoStyle,
+  MenuListStyle,
+  MenuStyle,
+  MenuTextStyle,
+  MenuTitleStyle,
+  WrapperStyle,
+  SelectCoffeeStyle,
 } from './styled/page'
 
 const App = () => {
   const { t } = useTranslation()
 
   const [lang, setLang] = useState<string>(LanguageIosEnum.JA)
+  const [selectCoffee, setSelectCoffee] = useState<string>(CoffeeList[0].name)
 
+  const clickCoffee = (coffeeName: string) => setSelectCoffee(coffeeName)
   useEffect(() => {
     if (lang !== '') i18n.changeLanguage(lang)
   }, [lang])
@@ -40,18 +49,27 @@ const App = () => {
             <CoffeeCapLidCoverStyle />
             <CoffeeCapLidMiddleStyle />
             <CoffeeCapFillingStyle />
+            <SelectCoffeeStyle>{t(`Coffee.${selectCoffee}`)}</SelectCoffeeStyle>
           </CoffeeCapStyle>
           <MenuStyle>
             <h4>Menu</h4>
             <MenuListStyle>
               <div>
                 <MenuTitleStyle>{CoffeeListTitle[0]}</MenuTitleStyle>
-                {CoffeeList.map((item) => <MenuTextStyle key={item.name}>{t(`Coffee.${item.name}`)}</MenuTextStyle>)}
+                {CoffeeList.map((item) => (
+                  <MenuTextStyle
+                    selected={selectCoffee === item.name}
+                    key={item.name}
+                    onClick={() => clickCoffee(item.name)}
+                  >
+                    {t(`Coffee.${item.name}`)}
+                  </MenuTextStyle>
+                ))}
               </div>
               <div>
                 <MenuTitleStyle>{CoffeeListTitle[1]}</MenuTitleStyle>
                 {CoffeeList.map((item) => (
-                  <MenuTextStyle key={item.name}>
+                  <MenuTextStyle key={item.name} onClick={() => clickCoffee(item.name)}>
                     {item.SML}
                   </MenuTextStyle>
                 ))}
@@ -59,7 +77,7 @@ const App = () => {
               <div>
                 <MenuTitleStyle>{CoffeeListTitle[2]}</MenuTitleStyle>
                 {CoffeeList.map((item) => (
-                  <MenuTextStyle key={item.name}>
+                  <MenuTextStyle key={item.name} onClick={() => clickCoffee(item.name)}>
                     {item.LRG}
                   </MenuTextStyle>
                 ))}
