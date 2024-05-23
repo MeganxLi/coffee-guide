@@ -56,8 +56,23 @@ export const MenuTitleStyle = styled.p`
   margin-bottom: 0.5rem;
 `
 
-export const MenuTextStyle = styled.p`
+export const MenuTextStyle = styled.p<MenuTextType>`
+  position: relative;
   line-height: 1.8rem;
+  width: ${({ selected }) => (
+    selected ? 'fit-content' : 'auto'
+  )};
+
+  &::before{
+    content:"";
+    position: absolute;
+    width: ${(props) => (props.selected ? '100%' : '0')};
+    height: 3px;
+    background-color:${Colors.Primary.transparency};
+    border-radius: 2px;
+    bottom: 0;
+    transition: 0.2s;
+  }
 `
 
 export const CoffeeCapStyle = styled.div`
@@ -83,16 +98,19 @@ export const CoffeeCapLidCoverStyle = styled(CoffeeCapBorder)`
   height: 20px;
   border-radius: 5px 5px 0 0;
 `
-export const CoffeeCapLidMiddleStyle = styled.div`
+const CoffeeCapMargin = styled.div`
+  margin-left: -25px;
+`
+export const CoffeeCapLidMiddleStyle = styled(CoffeeCapMargin)`
   background-color: ${Colors.White[500]};
   position: relative;
   z-index: 25;
   width: 250px;
-  margin-left: -25px;
   height: 35px;
   border-radius: 10px 10px 5px 5px;
   clip-path: polygon(3% 0%, 97% 0%, 100% 100%, 0% 100%);
 `
+
 export const CoffeeCapFillingStyle = styled.div`
   position: relative;
   z-index: -23;
@@ -103,4 +121,11 @@ export const CoffeeCapFillingStyle = styled.div`
   margin-top: -1px;
   margin-left: -15px;
   clip-path: polygon(0 0%, 100% 0, 88% 100%, 14% 100%);
+`
+
+export const SelectCoffeeStyle = styled(CoffeeCapMargin)`
+  color: ${Colors.Primary[900]};
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 1rem;
 `
