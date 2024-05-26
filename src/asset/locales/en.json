@@ -15,6 +15,9 @@
   },
   "Coffee": {
     "Espresso": "Espresso",
+    "Doppio": "Doppio",
+    "Ristretto": "Ristretto",
+    "Lungo": "Lungo",
     "Americano": "Americano",
     "FlatWhit": "Flat White",
     "Latte": "Latte",
