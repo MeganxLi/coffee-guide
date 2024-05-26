@@ -8,4 +8,5 @@ type MenuTextType = {
 
 type CoffeeCapMaskType = {
   $flex_grow: number
+  $light_color?: boolean
 }

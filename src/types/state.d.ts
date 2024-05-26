@@ -13,7 +13,6 @@ type CoffeeListType = {
   water?: number,
   syrup?: { number: number, name: string },
   butter?: number,
-  cafe?: number,
   SML: number,
   LRG: number
 }
