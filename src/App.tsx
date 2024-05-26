@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 
 import { useTranslation, I18nextProvider } from 'react-i18next'
 
@@ -41,20 +41,44 @@ const App = () => {
   const [lang, setLang] = useState<string>(LanguageIosEnum.EN)
   const [selectCoffee, setSelectCoffee] = useState<CoffeeListType>(CoffeeList[0])
 
-  const clickCoffee = (coffeeName: string) => {
-    console.log(CoffeeList.filter((item) => item.name === coffeeName)[0])
+  const saveLocal = (saveLang?: string, coffee?: CoffeeListType) => {
+    const langToSave = saveLang || lang
+    const coffeeToSave = coffee || selectCoffee
 
-    setSelectCoffee(CoffeeList.filter((item) => item.name === coffeeName)[0])
+    const dataToSave = {
+      lang: langToSave,
+      coffee: coffeeToSave,
+    }
+
+    localStorage.setItem('local', JSON.stringify(dataToSave))
   }
-  useEffect(() => {
-    if (lang !== '') i18n.changeLanguage(lang)
+
+  const clickCoffee = (coffeeName: string) => {
+    const filterCoffee = CoffeeList.filter((item) => item.name === coffeeName)[0]
+    setSelectCoffee(filterCoffee)
+    saveLocal(undefined, filterCoffee)
+  }
+
+  const changeLang = (value: string) => {
+    i18n.changeLanguage(value)
+    setLang(value)
+    saveLocal(value)
+  }
+
+  useLayoutEffect(() => {
+    const getLocal = JSON.parse(localStorage.getItem('local')!)
+    const getLocalLang = getLocal?.lang || LanguageIosEnum.EN
+
+    i18n.changeLanguage(getLocalLang)
+    setLang(getLocalLang)
+    setSelectCoffee(getLocal?.coffee || CoffeeList[0])
   }, [lang])
 
   return (
     <I18nextProvider i18n={i18n}>
       <WrapperStyle>
         <LogoStyle>Coffee</LogoStyle>
-        <LanguageMenu language={lang} onChange={(value) => { setLang(value) }} />
+        <LanguageMenu language={lang} onChange={(value) => { changeLang(value) }} />
       </WrapperStyle>
       <InnerContentStyle>
         <InnerStyle>
