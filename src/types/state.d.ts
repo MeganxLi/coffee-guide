@@ -11,7 +11,7 @@ type CoffeeListType = {
   milkFoam?: number,
   milkSperm?: number,
   water?: number,
-  syrup?: number | { number: number, name: string },
+  syrup?: { number: number, name: string },
   butter?: number,
   cafe?: number,
   SML: number,
