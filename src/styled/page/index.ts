@@ -113,14 +113,72 @@ export const CoffeeCapLidMiddleStyle = styled(CoffeeCapMargin)`
 
 export const CoffeeCapFillingStyle = styled.div`
   position: relative;
+`
+
+export const CoffeeCapFillingBorderStyle = styled.div`
   z-index: -23;
-  background-color: ${Colors.White[700]};
+  background-color: ${Colors.Black[200]};
   border-top: 4px solid ${Colors.Black.transparency};
   width: 230px;
   height: 280px;
   margin-top: -1px;
   margin-left: -15px;
   clip-path: polygon(0 0%, 100% 0, 88% 100%, 14% 100%);
+`
+export const CoffeeCapFillingMaskStyle = styled(CoffeeCapFillingBorderStyle)`
+  position: absolute;
+  bottom: 0;
+  transform: scale(0.93);
+  z-index: 1;
+  border: none;
+  display: flex;
+  flex-direction: column-reverse;
+`
+
+export const CoffeeIngredientsStyle = styled.div`
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: ${Colors.Black[600]};
+`
+
+export const CoffeeEspressoStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
+  background-color: ${Colors.Coffee.Espresso};
+  flex-grow:${({ $flex_grow }) => $flex_grow};
+`
+
+export const CoffeeMikeStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
+  background-color: ${Colors.Coffee.Milk};
+  flex-grow:${({ $flex_grow }) => $flex_grow};
+`
+
+export const CoffeeMileFoamStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
+  background-color: ${Colors.Coffee.MileFoam};
+  flex-grow:${({ $flex_grow }) => $flex_grow};
+`
+export const CoffeeButterStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
+  background-color: ${Colors.Coffee.Butter};
+  flex-grow:${({ $flex_grow }) => $flex_grow};
+`
+export const CoffeeSyrupStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
+  background-color: ${Colors.Coffee.Syrup};
+  flex-grow:${({ $flex_grow }) => $flex_grow};
+`
+export const CoffeeWaterStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
+  background-color: ${Colors.Coffee.Water};
+  flex-grow:${({ $flex_grow }) => $flex_grow};
+`
+export const CoffeeMilkSpermStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
+  background-color: ${Colors.Coffee.MilkSperm};
+  flex-grow:${({ $flex_grow }) => $flex_grow};
+`
+export const CoffeeChocolateStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
+  background-color: ${Colors.Coffee.Chocolate};
+  flex-grow:${({ $flex_grow }) => $flex_grow};
+`
+export const CoffeeCafeStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
+  background-color: ${Colors.Coffee.Cafe};
+  flex-grow:${({ $flex_grow }) => $flex_grow};
 `
 
 export const SelectCoffeeStyle = styled(CoffeeCapMargin)`
