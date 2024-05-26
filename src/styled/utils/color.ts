@@ -16,15 +16,15 @@ const Colors = {
     500: '#F0F0F0',
   },
   Coffee: {
-    Espresso: '#4F2B0C',
+    Espresso: '#7d604e',
     Cafe: '#49362F',
-    Butter: '#FFF4E4',
-    Syrup: '#AC5214',
-    Water: '#A1D5EA',
+    Butter: '#FDEDD4',
+    Syrup: '#C7987C',
+    Water: '#9DCAE7',
     MilkSperm: '#49362F',
-    Chocolate: '#301D0C',
-    Milk: '#FFEEC4',
-    MileFoam: '#FEF3E2',
+    Chocolate: '#6B4B35',
+    Milk: '#FFF4E4',
+    MileFoam: '#fafafa',
   },
 }
 export default Colors
