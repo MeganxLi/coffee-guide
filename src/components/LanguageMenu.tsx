@@ -1,7 +1,9 @@
 import * as Icon from 'react-feather'
 
 import LanguageList from '../constants/LanguageList'
-import { LanguageButton, LanguageMenuBlock, LanguageNavBlock } from '../styled/components/LanguageMenu'
+import {
+  LanguageButton, LanguageMenuBlock, LanguageNavBlock, LanguageNavItemStyle,
+} from '../styled/components/LanguageMenu'
 
 interface Props {
   language: string,
@@ -17,15 +19,16 @@ const LanguageMenu = ({ language, onChange }: Props) => (
     <LanguageNavBlock className="language-nav">
       <ul>
         {LanguageList.map((item: LanguageListType) => (
-          <li
+          <LanguageNavItemStyle
             key={item.ios}
             onClick={() => {
               onChange(item.ios)
             }}
             className={language && '2'}
+            $checked={language === item.ios}
           >
             {item.name}
-          </li>
+          </LanguageNavItemStyle>
         ))}
       </ul>
     </LanguageNavBlock>
