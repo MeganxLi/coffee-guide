@@ -1,0 +1,32 @@
+{
+  "Ingredients": {
+    "espresso": "エスプレッソ",
+    "milk": "ミルク",
+    "chocolate": "チョコレート",
+    "milkFoam": "ミルクフォーム",
+    "milkSperm": "ミルクスパム",
+    "water": "水",
+    "syrup": "キャラメルシロップ",
+    "brownSugar": "黒糖",
+    "vanillaSyrup": "バニラシロップ",
+    "hazelnutSyrup": "ヘーゼルナッツシロップ",
+    "almondSyrup": "アーモンドシロップ",
+    "butter": "バター"
+  },
+  "Coffee": {
+    "Espresso": "エスプレッソ",
+    "Doppio": "ドッピオ",
+    "Americano": "アメリカーノ",
+    "FlatWhit": "フラットホワイト",
+    "Latte": "ラテ",
+    "BrownSugarLatte": "黒糖ラテ",
+    "CaramelLatte": "キャラメルラテ",
+    "VanillaLatte": "バニララテ",
+    "HazelnutLatte": "ヘーゼルナッツラテ",
+    "DoubleLatte": "ダブルラテ",
+    "AlmondLatte": "アーモンドラテ",
+    "Cappuccino": "カプチーノ",
+    "Breve": "ブレヴェ",
+    "Mocha": "モカ"
+  }
+}

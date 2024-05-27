@@ -1,0 +1,32 @@
+{
+  "Ingredients": {
+    "espresso": "Espresso",
+    "milk": "Susu",
+    "chocolate": "Coklat",
+    "milkFoam": "Busa Susu",
+    "milkSperm": "Sperma Susu",
+    "water": "Air",
+    "syrup": "Sirap Karamel",
+    "brownSugar": "Gula Coklat",
+    "vanillaSyrup": "Sirap Vanilla",
+    "hazelnutSyrup": "Sirap Hazelnut",
+    "almondSyrup": "Sirap Almond",
+    "butter": "Mentega"
+  },
+  "Coffee": {
+    "Espresso": "Espresso",
+    "Doppio": "Doppio",
+    "Americano": "Americano",
+    "FlatWhit": "Flat White",
+    "Latte": "Latte",
+    "BrownSugarLatte": "Latte Gula Coklat",
+    "CaramelLatte": "Latte Karamel",
+    "VanillaLatte": "Latte Vanilla",
+    "HazelnutLatte": "Latte Hazelnut",
+    "DoubleLatte": "Double Latte",
+    "AlmondLatte": "Latte Almond",
+    "Cappuccino": "Cappuccino",
+    "Breve": "Breve",
+    "Mocha": "Mocha"
+  }
+}

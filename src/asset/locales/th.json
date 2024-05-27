@@ -1,0 +1,32 @@
+{
+  "Ingredients": {
+    "espresso": "เอสเปรสโซ",
+    "milk": "นม",
+    "chocolate": "ช็อคโกแลต",
+    "milkFoam": "โฟมนม",
+    "milkSperm": "สเปิร์มนม",
+    "water": "น้ำ",
+    "syrup": "ซอสคาราเมล",
+    "brownSugar": "น้ำตาลทราย",
+    "vanillaSyrup": "ซอสวานิลลา",
+    "hazelnutSyrup": "ซอสเป็ดอ้อย",
+    "almondSyrup": "ซอสอัลมอนด์",
+    "butter": "เนย"
+  },
+  "Coffee": {
+    "Espresso": "เอสเปรสโซ",
+    "Doppio": "ด็อปปิโอ",
+    "Americano": "อเมริกาโน",
+    "FlatWhit": "แฟลตไวท์",
+    "Latte": "ลาเต้",
+    "BrownSugarLatte": "ลาเต้น้ำตาลทราย",
+    "CaramelLatte": "ลาเต้คาราเมล",
+    "VanillaLatte": "ลาเต้วานิลลา",
+    "HazelnutLatte": "ลาเต้ฮาเซลนัท",
+    "DoubleLatte": "ดับเบิลลาเต้",
+    "AlmondLatte": "ลาเต้อัลมอนด์",
+    "Cappuccino": "คาปูชิโน",
+    "Breve": "เบรเว่",
+    "Mocha": "โมคา"
+  }
+}

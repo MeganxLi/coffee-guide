@@ -1,0 +1,34 @@
+{
+  "Ingredients": {
+    "espresso": "Espresso",
+    "milk": "Milk",
+    "chocolate": "Chocolate",
+    "milkFoam": "Milk Foam",
+    "milkSperm": "Milk Sperm",
+    "water": "Water",
+    "syrup": "Caramel Syrup",
+    "brownSugar": "Brown Sugar",
+    "vanillaSyrup": "Vanilla Syrup",
+    "hazelnutSyrup": "Hazelnut Syrup",
+    "almondSyrup": "Almond Syrup",
+    "butter": "Butter"
+  },
+  "Coffee": {
+    "Espresso": "Espresso",
+    "Doppio": "Doppio",
+    "Ristretto": "Ristretto",
+    "Lungo": "Lungo",
+    "Americano": "Americano",
+    "FlatWhit": "Flat White",
+    "Latte": "Latte",
+    "BrownSugarLatte": "Brown Sugar Latte",
+    "CaramelLatte": "Caramel Latte",
+    "VanillaLatte": "Vanilla Latte",
+    "HazelnutLatte": "Hazelnut Latte",
+    "DoubleLatte": "Double Latte",
+    "AlmondLatte": "Almond Latte",
+    "Cappuccino": "Cappuccino",
+    "Breve": "Breve",
+    "Mocha": "Mocha"
+  }
+}
