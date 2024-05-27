@@ -20,6 +20,12 @@ export const InnerContentStyle = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem;
+  &::before {
+    content: url(../../../public/Vector.svg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 `
 
 export const InnerStyle = styled.div`
@@ -68,10 +74,10 @@ export const MenuTextStyle = styled.p<MenuTextType>`
     content:"";
     position: absolute;
     width: ${(props) => (props.selected ? '100%' : '0')};
-    height: 3px;
+    height: 10px;
     background-color:${Colors.Primary.transparency};
     border-radius: 2px;
-    bottom: 0;
+    bottom: 4px;
     transition: 0.2s;
   }
 `

@@ -8,7 +8,7 @@ const Colors = {
   },
   Primary: {
     900: '#5A7785',
-    transparency: '#5a778547',
+    transparency: '#5f97b254',
   },
   White: {
     900: '#fff',
