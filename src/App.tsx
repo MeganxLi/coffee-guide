@@ -120,7 +120,7 @@ const App = () => {
                 <MenuTitleStyle>{CoffeeListTitle[1]}</MenuTitleStyle>
                 {CoffeeList.map((item) => (
                   <MenuTextStyle key={item.name} onClick={() => clickCoffee(item.name)}>
-                    {item.SML}
+                    {item.SML.toFixed(1)}
                   </MenuTextStyle>
                 ))}
               </div>
@@ -128,7 +128,7 @@ const App = () => {
                 <MenuTitleStyle>{CoffeeListTitle[2]}</MenuTitleStyle>
                 {CoffeeList.map((item) => (
                   <MenuTextStyle key={item.name} onClick={() => clickCoffee(item.name)}>
-                    {item.LRG}
+                    {item.LRG.toFixed(1)}
                   </MenuTextStyle>
                 ))}
               </div>
