@@ -1,6 +1,6 @@
 import { styled } from '@linaria/react'
 
-import Colors from '../utils/color'
+import Colors from '../utils/Colors'
 
 export const WrapperStyle = styled.div`
   padding: 0.8rem 1.5rem;
