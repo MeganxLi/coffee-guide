@@ -6,7 +6,12 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [
     react(),
-    VitePluginLinaria(),
+    VitePluginLinaria({
+      include: ['**/*.{ts,tsx}'],
+      babelOptions: {
+        presets: ['@babel/preset-typescript', '@babel/preset-react'],
+      },
+    }),
   ],
   base: 'https://MeganxLi.github.io/coffee-guide',
 })
