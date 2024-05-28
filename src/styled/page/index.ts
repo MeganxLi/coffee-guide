@@ -1,11 +1,14 @@
 import { styled } from '@linaria/react'
 
 import Colors from '../utils/Colors'
+import { rwd } from '../utils/Mixins'
 
+const WrapperHeight = 35
 export const WrapperStyle = styled.div`
   padding: 0.8rem 1.5rem;
   display: flex;
   justify-content: space-between;
+  height: ${`${WrapperHeight}px`};
 `
 
 export const LogoStyle = styled.span`
@@ -20,11 +23,20 @@ export const InnerContentStyle = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem;
+  ${rwd('md')}{
+    padding-bottom: 0; 
+  max-height: calc(100vh - ${`${WrapperHeight * 2}px`});
+  }
+
   &::before {
     content: url(../../../public/Vector.svg);
     position: absolute;
     bottom: 0;
     left: 0;
+    
+    ${rwd('md')}{
+      content: '';
+    } 
   }
 `
 
@@ -36,13 +48,33 @@ export const InnerStyle = styled.div`
   gap: 1rem;
   width: 80%;
   max-width: 1000px;
+
+  ${rwd('md')}{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    width: 100%;
+    height: 100%;
+  }
 `
 
 export const MenuStyle = styled.div`
+  ${rwd('md')}{
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: ${Colors.Primary[200]};
+    border-top:1rem solid ${Colors.Primary[200]};
+    border-bottom: 1rem solid ${Colors.Primary[200]};
+  }
+
   h4{
     font-size: 2rem;
     color: ${Colors.Primary[900]};
     margin-bottom: 1.8rem;
+
+    ${rwd('md')}{
+      display: none;
+    }
   }
 `
 
@@ -51,6 +83,13 @@ export const MenuListStyle = styled.div`
   grid-template-columns: 10rem repeat(2, 3rem);
   line-height: 1.5rem;
   gap: 2rem;
+
+  ${rwd('md')}{
+    background-color: ${Colors.White[300]};
+    grid-template-columns: 10rem repeat(2, 1fr);
+    margin: 0 1rem;
+    padding: 1rem;
+  }
 
   div:not(:first-child){
     text-align: center;
@@ -70,19 +109,24 @@ export const MenuTextStyle = styled.p<MenuTextType>`
   )};
   cursor: pointer;
 
+
   &::before{
-    content:"";
+    content: "";
     position: absolute;
     width: ${(props) => (props.selected ? '100%' : '0')};
     height: 10px;
     background-color:${Colors.Primary.transparency};
     border-radius: 2px;
     bottom: 4px;
-    transition: 0.2s;
+    transition: 0.2s;   
   }
 `
 
-export const CoffeeCapStyle = styled.div``
+export const CoffeeCapStyle = styled.div`
+  ${rwd('md')}{
+    transform: scale(0.8);
+  }
+`
 
 export const CoffeeCapBorder = styled.div`
   border-bottom: 2px solid ${Colors.Black.transparency};
@@ -132,6 +176,7 @@ export const CoffeeCapFillingBorderStyle = styled.div`
   margin-top: -1px;
   margin-left: -15px;
   clip-path: polygon(0 0%, 100% 0, 88% 100%, 14% 100%);
+ 
 `
 export const CoffeeCapFillingMaskStyle = styled(CoffeeCapFillingBorderStyle)`
   position: absolute;
@@ -147,7 +192,10 @@ export const CoffeeIngredientsStyle = styled.div`
   text-align: center;
   font-size: 1.2rem;
   line-height: 2.2rem;
-  transition: flex-grow 0.8s ease;
+  transition: flex-grow 0.8s ease; 
+  ${rwd('md')}{
+    font-size: 1.5rem;
+  }
 `
 
 export const CoffeeEspressoStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
@@ -207,4 +255,7 @@ export const SelectCoffeeStyle = styled(CoffeeCapMargin)`
   font-size: 1.2rem;
   text-align: center;
   padding-top: 1rem;
+  ${rwd('md')}{
+    font-size: 1.5rem;
+  }
 `
