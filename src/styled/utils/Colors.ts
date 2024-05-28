@@ -8,12 +8,15 @@ const Colors = {
   },
   Primary: {
     900: '#5A7785',
+    300: '#c9d7df',
+    200: '#dcdcdc',
     transparency: '#5f97b254',
   },
   White: {
     900: '#fff',
     700: '#F2E5DA',
     500: '#F0F0F0',
+    300: '#fdf8f4',
   },
   Coffee: {
     Espresso: '#7d604e',

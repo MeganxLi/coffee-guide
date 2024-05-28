@@ -1,6 +1,6 @@
 import { styled } from '@linaria/react'
 
-import Colors from '../utils/color'
+import Colors from '../utils/Colors'
 
 export const LanguageButton = styled.button`
   color: ${Colors.Primary[900]};

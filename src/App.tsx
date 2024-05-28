@@ -25,7 +25,6 @@ import {
   SelectCoffeeStyle,
   CoffeeCapFillingBorderStyle,
   CoffeeCapFillingMaskStyle,
-  CoffeeEspressoStyle,
   CoffeeMikeStyle,
   CoffeeMileFoamStyle,
   CoffeeButterStyle,
@@ -33,7 +32,8 @@ import {
   CoffeeMilkSpermStyle,
   CoffeeWaterStyle,
   CoffeeChocolateStyle,
-} from './styled/page'
+  CoffeeEspressoStyle,
+} from './styled/page/index'
 
 const App = () => {
   const { t } = useTranslation()
@@ -72,7 +72,7 @@ const App = () => {
     i18n.changeLanguage(getLocalLang)
     setLang(getLocalLang)
     setSelectCoffee(getLocal?.coffee || CoffeeList[0])
-  }, [lang])
+  }, [])
 
   return (
     <I18nextProvider i18n={i18n}>
