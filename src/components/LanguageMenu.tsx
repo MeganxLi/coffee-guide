@@ -2,7 +2,7 @@ import * as Icon from 'react-feather'
 
 import LanguageList from '../constants/LanguageList'
 import {
-  LanguageButton, LanguageMenuBlock, LanguageNavBlock, LanguageNavItemStyle,
+  LanguageButton, LanguageButtonCheckbox, LanguageMenuBlock, LanguageNavBlock, LanguageNavItemStyle,
 } from '../styled/components/LanguageMenu'
 
 interface Props {
@@ -12,9 +12,10 @@ interface Props {
 
 const LanguageMenu = ({ language, onChange }: Props) => (
   <LanguageMenuBlock>
-    <LanguageButton type="button">
+    <LanguageButton htmlFor="nav-toggle">
       <Icon.Globe />
     </LanguageButton>
+    <LanguageButtonCheckbox type="checkbox" id="nav-toggle" />
 
     <LanguageNavBlock className="language-nav">
       <ul>
