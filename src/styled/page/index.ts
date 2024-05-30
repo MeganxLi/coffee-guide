@@ -204,6 +204,7 @@ export const CoffeeEspressoStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMask
   flex-grow:${({ $flex_grow }) => $flex_grow};
   height: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 0)};
   color: ${({ $light_color }) => ($light_color ? Colors.White[500] : Colors.Black[600])};
+  overflow: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 'hidden')}; 
 `
 
 export const CoffeeMikeStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
@@ -211,6 +212,7 @@ export const CoffeeMikeStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType
   flex-grow:${({ $flex_grow }) => $flex_grow};
   height: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 0)};
   color: ${({ $light_color }) => ($light_color ? Colors.White[500] : Colors.Black[600])};
+  overflow: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 'hidden')}; 
 `
 
 export const CoffeeMileFoamStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
@@ -219,36 +221,42 @@ export const CoffeeMileFoamStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMask
   height: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 0)};
   color: ${({ $light_color }) => ($light_color ? Colors.White[500] : Colors.Black[600])};
   border-radius: 4rem 4rem 0 0;
+  overflow: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 'hidden')}; 
 `
 export const CoffeeButterStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
   background-color: ${Colors.Coffee.Butter};
   flex-grow:${({ $flex_grow }) => $flex_grow};
   height: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 0)};
   color: ${({ $light_color }) => ($light_color ? Colors.White[500] : Colors.Black[600])};
+  overflow: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 'hidden')}; 
 `
 export const CoffeeSyrupStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
   background-color: ${Colors.Coffee.Syrup};
   flex-grow:${({ $flex_grow }) => $flex_grow};
   height: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 0)};
   color: ${({ $light_color }) => ($light_color ? Colors.White[500] : Colors.Black[600])};
+  overflow: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 'hidden')}; 
 `
 export const CoffeeWaterStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
   background-color: ${Colors.Coffee.Water};
   flex-grow:${({ $flex_grow }) => $flex_grow};
   height: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 0)};
   color: ${({ $light_color }) => ($light_color ? Colors.White[500] : Colors.Black[600])};
+  overflow: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 'hidden')}; 
 `
 export const CoffeeMilkSpermStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
   background-color: ${Colors.Coffee.MilkSperm};
   flex-grow:${({ $flex_grow }) => $flex_grow};
   height: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 0)};
   color: ${({ $light_color }) => ($light_color ? Colors.White[500] : Colors.Black[600])};
+  overflow: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 'hidden')}; 
 `
 export const CoffeeChocolateStyle = styled(CoffeeIngredientsStyle) <CoffeeCapMaskType>`
   background-color: ${Colors.Coffee.Chocolate};
   flex-grow:${({ $flex_grow }) => $flex_grow};
   height: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 0)};
   color: ${({ $light_color }) => ($light_color ? Colors.White[500] : Colors.Black[600])};
+  overflow: ${({ $flex_grow }) => ($flex_grow ? 'auto' : 'hidden')}; 
 `
 
 export const SelectCoffeeStyle = styled(CoffeeCapMargin)`
