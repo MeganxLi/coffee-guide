@@ -13,7 +13,7 @@ export const LanguageMenuBlock = styled.div`
   justify-content: center;
   align-items: center;
 `
-
+const NavBorderRadius = 0.5
 export const LanguageNavBlock = styled.nav`
   display: block;
   position: absolute;
@@ -24,12 +24,15 @@ export const LanguageNavBlock = styled.nav`
   cursor: pointer; 
   display: none;
   padding-top: 1rem;
-  border: 1px solid #f3f3f4;
-  border-radius: 16px;
   z-index: 100;
 
   ${LanguageMenuBlock}:hover & {
     display: block;
+  }
+
+  ul{
+    border: 1px solid #f3f3f4;
+    border-radius: ${`${NavBorderRadius}rem`};
   }
 `
 
@@ -47,9 +50,9 @@ export const LanguageNavItemStyle = styled.li<LanguageNavItemType>`
     color: ${Colors.White[500]};
   }
   &:first-child{
-    border-radius: 0.5rem 0.5rem 0 0;
+    border-radius: ${`${NavBorderRadius}rem ${NavBorderRadius}rem 0 0`};
   }
   &:last-child{
-    border-radius: 0 0 0.5rem 0.5rem;
+    border-radius: ${`0 0 ${NavBorderRadius}rem ${NavBorderRadius}rem`};
   }
 `
