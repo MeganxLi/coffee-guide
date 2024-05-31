@@ -1,15 +1,10 @@
 import { styled } from '@linaria/react'
 
 import Colors from '../utils/Colors'
-import { rwd } from '../utils/Mixins'
 
-export const LanguageButton = styled.label`
+export const LanguageButton = styled.button`
   color: ${Colors.Primary[900]};
   display: flex;
-`
-
-export const LanguageButtonCheckbox = styled.input`
-  display: none;
 `
 
 export const LanguageMenuBlock = styled.div`
@@ -19,33 +14,19 @@ export const LanguageMenuBlock = styled.div`
   align-items: center;
 `
 const NavBorderRadius = 0.5
-export const LanguageNavBlock = styled.nav`
-  display: block;
+export const LanguageNavBlock = styled.nav<LanguageNavType>`
+  display: ${({ $active }) => ($active ? 'block' : 'none')};
   position: absolute;
   width: 200px;
   top: 2rem;
   right: 0rem;
   cursor: pointer; 
-  display: none;
   padding-top: 1rem;
   z-index: 100;
 
   ${LanguageMenuBlock}:hover & {
     display: block;
   }
-  
-  ${rwd('md')}{
-    ${LanguageButtonCheckbox}:checked~ &{
-     display: block;
-    }
-    ${LanguageButtonCheckbox}:not(:checked)~ &{
-     display: none;
-    }
-  }
-  
-  
-  
-
 
   ul{
     border: 1px solid #f3f3f4;
