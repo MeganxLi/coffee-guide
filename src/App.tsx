@@ -108,7 +108,7 @@ const App = () => {
                 <MenuTitleStyle>{CoffeeListTitle[0]}</MenuTitleStyle>
                 {CoffeeList.map((item) => (
                   <MenuTextStyle
-                    selected={selectCoffee.name === item.name}
+                    $selected={selectCoffee.name === item.name}
                     key={item.name}
                     onClick={() => clickCoffee(item.name)}
                   >

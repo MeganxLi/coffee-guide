@@ -105,8 +105,8 @@ export const MenuTitleStyle = styled.p`
 export const MenuTextStyle = styled.p<MenuTextType>`
   position: relative;
   line-height: 1.8rem;
-  width: ${({ selected }) => (
-    selected ? 'fit-content' : 'auto'
+  width: ${({ $selected }) => (
+    $selected ? 'fit-content' : 'auto'
   )};
   cursor: pointer;
 
@@ -114,7 +114,7 @@ export const MenuTextStyle = styled.p<MenuTextType>`
   &::before{
     content: "";
     position: absolute;
-    width: ${(props) => (props.selected ? '100%' : '0')};
+    width: ${(props) => (props.$selected ? '100%' : '0')};
     height: 10px;
     background-color:${Colors.Primary.transparency};
     border-radius: 2px;

@@ -1,9 +1,13 @@
+type LanguageNavType = {
+  $active: boolean
+}
+
 type LanguageNavItemType = {
   $checked: boolean
 }
 
 type MenuTextType = {
-  selected?: boolean
+  $selected?: boolean
 }
 
 type CoffeeCapMaskType = {
