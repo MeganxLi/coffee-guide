@@ -27,6 +27,7 @@
 - [Vite](https://vitejs.dev/)
 - [EsLint](https://eslint.org/)
 - [Linaria](https://linaria.dev/)
+- [i18next](https://www.i18next.com/)
 
 ## Building
 
